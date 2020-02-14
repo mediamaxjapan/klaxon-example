@@ -27,6 +27,12 @@ java {
 }
 
 tasks {
+  compileKotlin {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
+  }
+  compileTestKotlin {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
+  }
   test {
     useJUnitPlatform {
       includeEngines("spek2")
