@@ -1,6 +1,5 @@
 package jp.ne.mmj.example.klaxon
 
-import com.beust.klaxon.Json
 import com.beust.klaxon.TypeAdapter
 import com.beust.klaxon.TypeFor
 import kotlin.reflect.KClass
@@ -15,7 +14,7 @@ data class IntItem(val value: Int) : Item("int")
 // remove description after type created
 data class StringItem(
   val value: String
-  // just remove property no longer needed,
+  // just remove field no longer needed,
   // Klaxon ignore when deserialize json data
   // val description: String
 ) : Item("string")

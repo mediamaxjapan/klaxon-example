@@ -11,7 +11,7 @@ class AdditionTest : Spek({
     val loaded = Klaxon().parseArray<Input>(oldJson)!!
     // verify load successfully
     assertEquals(2, loaded.size)
-    // verify new field is property migrated
+    // verify new field is properly migrated
     val migrated = loaded[1] as StringInput
     assertEquals("description of hello", migrated.description)
     // verify serialized with new field
