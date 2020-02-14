@@ -2,7 +2,7 @@ group = "jp.ne.mmj"
 version = "1.0.0"
 
 plugins {
-  application
+  `java-library`
   kotlin("jvm") version "1.3.61"
 }
 
@@ -24,10 +24,6 @@ dependencies {
 java {
   sourceCompatibility = JavaVersion.VERSION_11
   targetCompatibility = JavaVersion.VERSION_11
-}
-
-application {
-  mainClassName = "jp.ne.mmj.example.klaxon.Main"
 }
 
 tasks {
